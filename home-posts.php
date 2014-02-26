@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php get_header(); 
+
+/*
+	Template Name: Home Posts
+*/
+
+?>
 
 <div id='articlewrapper'>
 

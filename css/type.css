@@ -1,0 +1,186 @@
+/*=========================
+------ @FONT-FACE ---------
+==========================*/
+/* SOCIAL ICONS */
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('webfonts/social-icons/MonoSocialIconsFont-1.10.eot');
+    src: url('webfonts/social-icons/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/social-icons/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('webfonts/social-icons/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('webfonts/social-icons/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('webfonts/social-icons/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@include font-face("Mono Social Icons Font", font-files("webfonts/MonoSocialIconsFont-1.10.woff", "webfonts/MonoSocialIconsFont-1.10.ttf", "webfonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont"), "webfonts/MonoSocialIconsFont-1.10.eot", normal, normal);
+
+/* HERO REGULAR */
+@font-face {
+    font-family: 'heroregular';
+    src: url('webfonts/hero/hero-webfont.eot');
+    src: url('webfonts/hero/hero-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/hero/hero-webfont.woff') format('woff'),
+         url('webfonts/hero/hero-webfont.ttf') format('truetype'),
+         url('webfonts/hero/hero-webfont.svg#heroregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* CALIBRI */
+@font-face {
+    font-family: 'calibri';
+    src: url('webfonts/calibri/calibri-webfont.eot');
+    src: url('webfonts/calibri/calibri-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/calibri/calibri-webfont.woff') format('woff'),
+         url('webfonts/calibri/calibri-webfont.ttf') format('truetype'),
+         url('webfonts/calibri/calibri-webfont.svg#calibri') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'calibri-italic';
+    src: url('webfonts/calibri/calibri_italic-webfont.eot');
+    src: url('webfonts/calibri/calibri_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/calibri/calibri_italic-webfont.woff') format('woff'),
+         url('webfonts/calibri/calibri_italic-webfont.ttf') format('truetype'),
+         url('webfonts/calibri/calibri_italic-webfont.svg#calibri-italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'calibri-bold';
+    src: url('webfonts/calibri/calibri_bold-webfont.eot');
+    src: url('webfonts/calibri/calibri_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/calibri/calibri_bold-webfont.woff') format('woff'),
+         url('webfonts/calibri/calibri_bold-webfont.ttf') format('truetype'),
+         url('webfonts/calibri/calibri_bold-webfont.svg#calibri-bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ALAMAIN */
+
+@font-face {
+    font-family: 'alamain';
+    src: url('webfonts/alamain/alamain-webfont.eot');
+    src: url('webfonts/alamain/alamain-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/alamain/alamain-webfont.woff') format('woff'),
+         url('webfonts/alamain/alamain-webfont.ttf') format('truetype'),
+         url('webfonts/alamain/alamain-webfont.svg#alamain') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+ 
+/*=========================
+--------- STYLING ---------
+==========================*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 10px;
+	font-family: 'heroregular', sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+    color: #58595B;
+}
+
+h1 {
+	margin-bottom: 42.5px;
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-left: 12.5%;
+	padding-right: 12.5%;
+}
+h2 {
+	font-family: 'alamain', sans-serif;
+	font-size: 30px;
+	text-transform: lowercase;
+}
+h3 {
+	font-size: 25px;
+}
+h4 {
+	font-size: 20px;
+}
+
+p {
+	font-family: 'calibri', sans-serif;
+	font-size: 16px;
+	color: #2E3B42;
+	line-height: 1.6;
+	margin-bottom: 42.5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+article p a {
+	color: #27AAE1;
+	font-family: 'calibri-italic';
+}
+article p a:hover {
+	color: #00A79D;
+}
+article p a:active {
+	color: #8EC640;
+}
+
+span {
+	font-family: 'calibri', sans-serif;
+	font-size: 12px;
+}
+
+/* SOCIAL ICONS */
+.social-icons, a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+.social-icons a {
+	text-decoration: none;
+	color: #58595B;
+}
+.social-icons a:hover {
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
