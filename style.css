@@ -14,6 +14,11 @@ License URI: http://creativecommons.org/licenses/by-nc-sa/4.0/
 --------- GENERAL ---------
 ==========================*/
 
+/* Behing color */
+html {
+	background: #1F272B;
+}
+
 /* Padding behind nav */
 body {
 	margin-top: 100px;
@@ -149,6 +154,10 @@ img.center {
 ---------- SLIDER ---------
 ==========================*/
 
+.feature {
+	background: #fff;
+}
+
 .slider { 
 	z-index: 1;
 	position: relative; 
@@ -196,6 +205,10 @@ img.center {
 /*=========================
 -------- ARTICLES ---------
 ==========================*/
+
+.fullspan.article {
+	background: #fff;
+}
 
 /* color every second article */
 .fullspan.article:nth-child(2n+1) {
@@ -331,7 +344,7 @@ input[type=button]#toTop:hover {
 	line-height: 120px;
 }
 
-
+/* FOOTER 2 */
 .fullspan.footer2 {
 	background: #1F272B;
 	text-align: center;
