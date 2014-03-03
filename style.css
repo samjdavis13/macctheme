@@ -19,10 +19,6 @@ body {
 	margin-top: 100px;
 }
 
-.fullspan {
-	width: 100%;
-}
-
 /*=========================
 ------ NAVIGATION ---------
 ==========================*/
@@ -39,6 +35,7 @@ body {
 }
 
 .fullspan.nav {
+	width: 100%;
 	position: relative;
 	z-index: 10;
 	background: #2E3B42;
@@ -159,11 +156,16 @@ img.center {
 }
     .slider li { 
     	list-style: none; 
-    	height: 320px;
+    	height: 350px;
     }
         .slider ul li { 
         	float: left; 
         }
+
+        	.slider ul li img {
+        		width: auto;
+        		height: 350px;
+        	}
 
 .dots {
   position: absolute;
@@ -372,4 +374,8 @@ input[type=submit] {
 	background: #58595B;
 	border: none;
 	color: #fff;
+}
+
+.hide {
+	display: none;
 }
