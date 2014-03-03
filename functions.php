@@ -31,4 +31,7 @@ add_action( 'wp_enqueue_scripts', 'theme_styles' );
 // Enable custom menus
 add_theme_support( 'menus' );
 
+// Hide admin abr
+show_admin_bar(false);
+
 ?>
