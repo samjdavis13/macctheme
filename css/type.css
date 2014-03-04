@@ -136,22 +136,17 @@ span {
 
 /* LISTS */
 
-article ul {
+article ul,
+article ol {
     list-style: disc;
     padding-left: 35px;
     margin-bottom: 20px;
-
     font-family: 'calibri', 'asap', sans-serif;
     color: #58595B;
 }
 
 article ol {
     list-style: decimal;
-    padding-left: 35px;
-    margin-bottom: 20px;
-
-    font-family: 'calibri', 'asap', sans-serif;
-    color: #58595B;
 }
 
 /* SOCIAL ICONS */
