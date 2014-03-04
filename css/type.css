@@ -13,6 +13,7 @@
     font-weight: normal;
     font-style: normal;
 }
+@include font-face("Mono Social Icons Font", font-files("webfonts/MonoSocialIconsFont-1.10.woff", "webfonts/MonoSocialIconsFont-1.10.ttf", "webfonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont"), "webfonts/MonoSocialIconsFont-1.10.eot", normal, normal);
 
 /* HERO REGULAR */
 @font-face {
@@ -26,34 +27,34 @@
     font-style: normal;
 }
 
-/* CALIBRI */
+/* ASAP */
 @font-face {
-    font-family: 'calibri';
-    src: url('webfonts/calibri/calibri-webfont.eot');
-    src: url('webfonts/calibri/calibri-webfont.eot?#iefix') format('embedded-opentype'),
-         url('webfonts/calibri/calibri-webfont.woff') format('woff'),
-         url('webfonts/calibri/calibri-webfont.ttf') format('truetype'),
-         url('webfonts/calibri/calibri-webfont.svg#calibri') format('svg');
+    font-family: 'asapbold';
+    src: url('webfonts/asap/asap-bold-webfont.eot');
+    src: url('webfonts/asap/asap-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/asap/asap-bold-webfont.woff') format('woff'),
+         url('webfonts/asap/asap-bold-webfont.ttf') format('truetype'),
+         url('webfonts/asap/asap-bold-webfont.svg#asapbold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'calibri-italic';
-    src: url('webfonts/calibri/calibri_italic-webfont.eot');
-    src: url('webfonts/calibri/calibri_italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('webfonts/calibri/calibri_italic-webfont.woff') format('woff'),
-         url('webfonts/calibri/calibri_italic-webfont.ttf') format('truetype'),
-         url('webfonts/calibri/calibri_italic-webfont.svg#calibri-italic') format('svg');
+    font-family: 'asap-italic';
+    src: url('webfonts/asap/asap-italic-webfont.eot');
+    src: url('webfonts/asap/asap-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/asap/asap-italic-webfont.woff') format('woff'),
+         url('webfonts/asap/asap-italic-webfont.ttf') format('truetype'),
+         url('webfonts/asap/asap-italic-webfont.svg#asap-italic') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'calibri-bold';
-    src: url('webfonts/calibri/calibri_bold-webfont.eot');
-    src: url('webfonts/calibri/calibri_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('webfonts/calibri/calibri_bold-webfont.woff') format('woff'),
-         url('webfonts/calibri/calibri_bold-webfont.ttf') format('truetype'),
-         url('webfonts/calibri/calibri_bold-webfont.svg#calibri-bold') format('svg');
+    font-family: 'asap-regular';
+    src: url('webfonts/asap/asap-regular-webfont.eot');
+    src: url('webfonts/asap/asap-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/asap/asap-regular-webfont.woff') format('woff'),
+         url('webfonts/asap/asap-regular-webfont.ttf') format('truetype'),
+         url('webfonts/asap/asap-regular-webfont.svg#asap-regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -70,6 +71,7 @@
          url('webfonts/alamain/alamain-webfont.svg#alamain') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
  
 /*=========================
@@ -106,8 +108,6 @@ h4 {
 
 p {
 	font-family: 'calibri', 'asap', sans-serif;
-	font-size: 15px;
-	font-family: 'calibri', sans-serif;
 	font-size: 16px;
 	color: #58595B;
 	line-height: 1.6;
@@ -120,7 +120,7 @@ a {
 
 article p a {
 	color: #27AAE1;
-	font-family: 'calibri-italic';
+	font-family: 'calibri-italic', 'asap-italic';
 }
 article p a:hover {
 	color: #00A79D;
@@ -130,7 +130,7 @@ article p a:active {
 }
 
 span {
-	font-family: 'calibri', sans-serif;
+	font-family: 'calibri', 'asap', sans-serif;
 	font-size: 12px;
 }
 
@@ -141,7 +141,7 @@ article ul {
     padding-left: 35px;
     margin-bottom: 20px;
 
-    font-family: 'calibri', sans-serif;
+    font-family: 'calibri', 'asap', sans-serif;
     color: #58595B;
 }
 
@@ -150,7 +150,7 @@ article ol {
     padding-left: 35px;
     margin-bottom: 20px;
 
-    font-family: 'calibri', sans-serif;
+    font-family: 'calibri', 'asap', sans-serif;
     color: #58595B;
 }
 

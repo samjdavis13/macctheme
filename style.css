@@ -139,7 +139,7 @@ body {
 		.subnav nav ul li a {
 			color: #CCCCCC;
 			padding: 10px;
-			font-family: 'calibri', 'asap', sans-serif;
+			font-family: 'calibri';
 			text-transform: capitalize;
 		}
 			.subnav nav ul li.current-menu-item a {
@@ -283,7 +283,7 @@ th {
 }
 
 td {
-	font-family: 'calibri', 'asap', sans-serif;
+	font-family: 'calibri';
 }
 
 td a {
@@ -310,7 +310,7 @@ input[type=button]#toTop {
 
 	color: #000;
 	text-transform: uppercase;
-	font-family: 'calibri', 'asap', sans-serif;
+	font-family: 'calibri';
 	font-size: 13px;
 
 	height: 40px;
@@ -386,7 +386,7 @@ input[type=button]#toTop:hover {
 
 form {
 	color: #fff;
-	font-family: 'calibri', 'asap', sans-serif;
+	font-family: 'calibri';
 }
 
 input {

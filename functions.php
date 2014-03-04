@@ -52,3 +52,23 @@ create_widget( 'Middle Footer', 'footer_middle', 'Displays in the middle of the 
 create_widget( 'Right Footer', 'footer_right', 'Displays in the right of the footer.' );
 
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
