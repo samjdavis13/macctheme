@@ -222,18 +222,14 @@ hr {
 	width: 80%;
 	margin: 0 auto;
 	margin-bottom: 42.5px;
-	color: green;
-	background: black;
+	background: #58595B;
 }
 
 /* IMAGES */
 article img {
-	width: 220px;
-	height: auto;
 	display: inline;
 	float: left;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin: 0 10px 10px 0;
 }
 
 /* TABLES */
@@ -243,7 +239,6 @@ table {
 }
 
 table, th, tr, td {
-	/*border: 1px solid black;*/
 	color: #2E3B42;
 }
 
