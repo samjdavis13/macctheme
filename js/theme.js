@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
 	$(window).scroll(function() {
 		var  windowpos = $(window).scrollTop();
 
-		if (windowpos >= feature.outerHeight() + nav.outerHeight() ) {
+		if (windowpos >= feature.outerHeight() + nav.outerHeight() - 100) {
 			topButton.addClass('appear');
 			$('nav ul').addClass('right-align');
 			$('#navlogo').addClass('appear');

@@ -10,7 +10,11 @@
 				</article>
 			</div>
 		<?php endwhile; else:?>
-			<p>There are no posts or pages here</p>
+			<div class='fullspan article'>
+				<article class='container_12'>
+					<p>There are no posts or pages here</p>
+				</article>
+			</div>
 		<?php endif; ?>
 
 	</div>
