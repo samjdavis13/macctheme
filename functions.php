@@ -33,6 +33,7 @@ add_theme_support( 'menus' );
 // Hide admin abr
 show_admin_bar(false);
 
+<<<<<<< HEAD
 // Enable widgets
 function create_widget( $name, $id, $description ) {
 	$args = array (
@@ -72,3 +73,9 @@ create_widget( 'Right Footer', 'footer_right', 'Displays in the right of the foo
 
 
 
+<<<<<<< HEAD
+=======
+=======
+?>
+>>>>>>> parent of d437986... Widgetise Footer
+>>>>>>> parent of 3306b5d... Fix White Screen

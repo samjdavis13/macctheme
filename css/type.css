@@ -108,7 +108,11 @@ h4 {
 
 p {
 	font-family: 'calibri', 'asap', sans-serif;
+<<<<<<< HEAD
 	font-size: 16px;
+=======
+	font-size: 15px;
+>>>>>>> parent of 3306b5d... Fix White Screen
 	color: #58595B;
 	line-height: 1.6;
 	margin-bottom: 20px;
