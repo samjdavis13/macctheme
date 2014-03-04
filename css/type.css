@@ -13,7 +13,6 @@
     font-weight: normal;
     font-style: normal;
 }
-@include font-face("Mono Social Icons Font", font-files("webfonts/MonoSocialIconsFont-1.10.woff", "webfonts/MonoSocialIconsFont-1.10.ttf", "webfonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont"), "webfonts/MonoSocialIconsFont-1.10.eot", normal, normal);
 
 /* HERO REGULAR */
 @font-face {
@@ -108,11 +107,8 @@ h4 {
 
 p {
 	font-family: 'calibri', 'asap', sans-serif;
-<<<<<<< HEAD
 	font-size: 16px;
-=======
 	font-size: 15px;
->>>>>>> parent of 3306b5d... Fix White Screen
 	color: #58595B;
 	line-height: 1.6;
 	margin-bottom: 20px;
