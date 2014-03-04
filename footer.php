@@ -41,9 +41,15 @@
 			</footer>
 		</div>
 
-		<div class='fullspan footer2'>
+		<div class='fullspan footer2 copyright'>
 			<footer class='container_12' id='footer-2'>
-				<span>&copy; Copyright <?php echo(date('Y')); ?> Mount Annan Christian College. All Rights Reserved.</span>
+				<span>
+					<?php
+						echo('&copy; ');
+						echo(date('Y '));
+						echo(bloginfo(name) . '. All Rights Reserved.');
+					?>
+				</span>
 			</footer>
 		</div>
 		<?php wp_footer(); ?>
