@@ -51,4 +51,18 @@ create_widget( 'Left Footer', 'footer_left', 'Displays in the left of the footer
 create_widget( 'Middle Footer', 'footer_middle', 'Displays in the middle of the footer.' );
 create_widget( 'Right Footer', 'footer_right', 'Displays in the right of the footer.' );
 
+// Enable searching of custom post types.
+add_filter( 'pre_get_posts', 'tgm_cpt_search' );
+/**
+ * This function modifies the main WordPress query to include an array of post types instead of the default 'post' post type.
+ *
+ * @param mixed $query The original query
+ * @return $query The amended query
+ */
+function tgm_cpt_search( $query ) {
+    if ( $query->is_search )
+		$query->set( 'post_type', array( 'post', 'movies', 'products', 'portfolio', 'home-post', 'page' ) );
+    return $query;
+};
+
 ?>
