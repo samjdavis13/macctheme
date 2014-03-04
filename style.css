@@ -270,6 +270,58 @@ td a:active {
 	color: #8EC640;
 }
 
+/* FORMS */
+
+.article form {
+	color: #58595B;
+	font-family: 'calibri';
+}
+
+.article label {
+	margin: 20px 0 0 0;
+}
+
+.article input[type=text] {
+	background: white;
+	border: 1px solid #F2F2F2;
+	padding: 10px;
+	padding-right: 0;
+}
+
+.article textarea {
+	background: white;
+	border: 1px solid #F2F2F2;
+	padding: 10px;
+	padding-right: 0;
+}
+
+.article input[type=submit] {
+	width: 100px;
+	padding: 10px;
+	background: white;
+	border: 1px solid #F2F2F2;
+	margin: 0;
+}
+.article input[type=submit]:hover {
+	background: #E6E6E6;
+	border: 1px solid #E6E6E6;
+}
+.article input[type=submit]:active {
+	background: #B3B3B3;
+	border: 1px solid #B3B3B3;
+}
+
+.article div#ninja_forms_field_2_div_wrap,
+.article div#ninja_forms_field_1_div_wrap {
+	width: 380px; /* GRID_5 */
+	margin: 0;
+	padding: 0;
+}
+
+#ninja_forms_field_3 {
+	width: 380px;
+}
+
 
 /*=========================
 ------- BACK TO TOP -------
@@ -354,21 +406,21 @@ input[type=button]#toTop:hover {
 ----------- FORM ----------
 ==========================*/
 
-.screen-reader-text{
+footer .screen-reader-text{
 	display: none;
 }
 
-form {
+footer form {
 	color: #fff;
 	font-family: 'calibri';
 }
 
-input {
+footer input {
 	outline: none;
 	color: #fff;
 }
 
-input[type=text] {
+footer input[type=text] {
 	width: 155px;
 	height: 30px;
 	background: #263035;
@@ -383,7 +435,7 @@ input[type=text] {
 
 
 
-input[type=submit] {
+footer input[type=submit] {
 	width: 50px;
 	height: 30px;
 	background: #58595B;
