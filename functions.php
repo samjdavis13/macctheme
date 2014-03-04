@@ -34,4 +34,43 @@ add_theme_support( 'menus' );
 // Hide admin abr
 show_admin_bar(false);
 
+
+
+function create_widget( $name, $id, $description ) {
+	$args = array (
+	'name'			=> __( $name ),
+	'id' 			=> $id,
+	'description' 	=> $description,
+	'before_widget' => '',
+	'after_widget' 	=> '',
+	'before_title' 	=> '<h5>',
+	'after_title' 	=> '</h5>'
+	);
+	register_sidebar( $args );
+}
+
+create_widget( 'Left Footer', 'footer_left', 'Displays in the left of the footer.' );
+create_widget( 'Middle Footer', 'footer_middle', 'Displays in the middle of the footer.' );
+create_widget( 'Right Footer', 'footer_right', 'Displays in the right of the footer.' );
+
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
