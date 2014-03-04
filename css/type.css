@@ -109,7 +109,7 @@ h4 {
 p {
 	font-family: 'calibri', sans-serif;
 	font-size: 16px;
-	color: #FFF;
+	color: #58595B;
 	line-height: 1.6;
 	margin-bottom: 20px;
 }
@@ -134,6 +134,26 @@ span {
 	font-size: 12px;
 }
 
+/* LISTS */
+
+article ul {
+    list-style: disc;
+    padding-left: 35px;
+    margin-bottom: 20px;
+
+    font-family: 'calibri', sans-serif;
+    color: #58595B;
+}
+
+article ol {
+    list-style: decimal;
+    padding-left: 35px;
+    margin-bottom: 20px;
+
+    font-family: 'calibri', sans-serif;
+    color: #58595B;
+}
+
 /* SOCIAL ICONS */
 .social-icons, a.symbol:before {
     font-family: 'Mono Social Icons Font';
@@ -155,32 +175,3 @@ span {
 .social-icons a:hover {
 	color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -257,26 +257,6 @@ article img {
 	margin-right: 10px;
 }
 
-/* LISTS */
-
-article ul {
-	list-style: disc;
-	padding-left: 35px;
-	margin-bottom: 20px;
-
-	font-family: 'calibri', sans-serif;
-	color: #FFF;
-}
-
-article ol {
-	list-style: decimal;
-	padding-left: 35px;
-	margin-bottom: 20px;
-
-	font-family: 'calibri', sans-serif;
-	color: #FFF;
-}
-
 /* TABLES */
 
 table {

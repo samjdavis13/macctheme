@@ -5,14 +5,20 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 }
 
+article p,
+article ol,
+article ul {
+	color: #FFF;
+}
+
 .article a {
-	color: #fff;
+	color: #58595B;
 }
 .article a:hover {
-	color: #E6E6E6;
+	color: #686A6B;
 }
 .article a:active {
-	color: #CCC;
+	color: #7A7C7C;
 }
 
 
@@ -39,6 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 .fullspan.article:nth-of-type(6n+6) {
 	background: #7B5BA2;
 }
+
 
 /* Table Links */
 td a {
