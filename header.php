@@ -11,6 +11,8 @@
 		</title>
 		<?php wp_head(); ?>
 
+		<link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/favicon.png" />
+
 	</head>
 	<body>
 		<div class='fullspan nav fixedTop'>
