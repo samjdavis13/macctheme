@@ -4,8 +4,8 @@
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<div class='fullspan article'>
 				<article class='container_12'>
-					<h1><?php the_title(); ?></h1>
-					<span>Posted by <?php the_author(); ?><br><?php the_time(); echo(' '); the_date(); ?></span><br><br>
+					<a href='<?php the_permalink(); ?>'><h1><?php the_title(); ?></h1></a>
+					<!--<span>Posted by <?php the_author(); ?><br><?php the_time(); echo(' '); the_date(); ?></span><br><br>-->
 					<?php the_content(); ?>
 				</article>
 			</div>
