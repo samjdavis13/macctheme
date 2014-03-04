@@ -9,6 +9,10 @@
 			?>
 
 		</title>
+
+		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.png" type="image/x-icon">
+		<link rel="icon" href="<?php bloginfo('template_directory'); ?>/favicon.png" type="image/x-icon">
+
 		<?php wp_head(); ?>
 
 	</head>
