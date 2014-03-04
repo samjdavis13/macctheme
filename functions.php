@@ -25,7 +25,6 @@ function theme_js() {
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_js' );
-
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
 // Enable custom menus
@@ -34,8 +33,7 @@ add_theme_support( 'menus' );
 // Hide admin abr
 show_admin_bar(false);
 
-
-
+// Enable widgets
 function create_widget( $name, $id, $description ) {
 	$args = array (
 	'name'			=> __( $name ),
