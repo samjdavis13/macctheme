@@ -5,7 +5,7 @@
 			
 			<?php
 				wp_title( '-', true, 'right' );
-				bloginfo( 'name' );
+				bloginfo('name');
 			?>
 
 		</title>
@@ -36,6 +36,26 @@
 		);
 		$the_query = new WP_Query( $args );
 	?>
+
+	<div class='fullspan subnav'>
+		<nav class="container_12">
+			<ul>
+				<?php 	
+
+					$menuname = wp_title('', false) . '-sub-menu';
+					$args = array (
+						menu => $menuname,
+					);
+
+					if ( wp_get_nav_menu_object($menuname) ) { // Display appropriate sub-menu if not on home-page
+						wp_nav_menu( $args );
+					};
+					
+				?>
+
+			</ul>
+		</nav>
+	</div>
 
 	<div class='fullspan feature'>
 		<div class='container_12 slider'>
