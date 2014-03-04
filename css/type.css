@@ -26,34 +26,34 @@
     font-style: normal;
 }
 
-/* ASAP */
+/* CALIBRI */
 @font-face {
-    font-family: 'asapbold';
-    src: url('webfonts/asap/asap-bold-webfont.eot');
-    src: url('webfonts/asap/asap-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('webfonts/asap/asap-bold-webfont.woff') format('woff'),
-         url('webfonts/asap/asap-bold-webfont.ttf') format('truetype'),
-         url('webfonts/asap/asap-bold-webfont.svg#asapbold') format('svg');
+    font-family: 'calibri';
+    src: url('webfonts/calibri/calibri-webfont.eot');
+    src: url('webfonts/calibri/calibri-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/calibri/calibri-webfont.woff') format('woff'),
+         url('webfonts/calibri/calibri-webfont.ttf') format('truetype'),
+         url('webfonts/calibri/calibri-webfont.svg#calibri') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'asap-italic';
-    src: url('webfonts/asap/asap-italic-webfont.eot');
-    src: url('webfonts/asap/asap-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('webfonts/asap/asap-italic-webfont.woff') format('woff'),
-         url('webfonts/asap/asap-italic-webfont.ttf') format('truetype'),
-         url('webfonts/asap/asap-italic-webfont.svg#asap-italic') format('svg');
+    font-family: 'calibri-italic';
+    src: url('webfonts/calibri/calibri_italic-webfont.eot');
+    src: url('webfonts/calibri/calibri_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/calibri/calibri_italic-webfont.woff') format('woff'),
+         url('webfonts/calibri/calibri_italic-webfont.ttf') format('truetype'),
+         url('webfonts/calibri/calibri_italic-webfont.svg#calibri-italic') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'asap-regular';
-    src: url('webfonts/asap/asap-regular-webfont.eot');
-    src: url('webfonts/asap/asap-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('webfonts/asap/asap-regular-webfont.woff') format('woff'),
-         url('webfonts/asap/asap-regular-webfont.ttf') format('truetype'),
-         url('webfonts/asap/asap-regular-webfont.svg#asap-regular') format('svg');
+    font-family: 'calibri-bold';
+    src: url('webfonts/calibri/calibri_bold-webfont.eot');
+    src: url('webfonts/calibri/calibri_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/calibri/calibri_bold-webfont.woff') format('woff'),
+         url('webfonts/calibri/calibri_bold-webfont.ttf') format('truetype'),
+         url('webfonts/calibri/calibri_bold-webfont.svg#calibri-bold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -105,8 +105,16 @@ h4 {
 }
 
 p {
+<<<<<<< HEAD
+<<<<<<< HEAD
 	font-family: 'calibri', 'asap', sans-serif;
 	font-size: 15px;
+=======
+=======
+>>>>>>> parent of 093d7e0... Change Calibri to ASAP due to licensing
+	font-family: 'calibri', sans-serif;
+	font-size: 16px;
+>>>>>>> parent of 093d7e0... Change Calibri to ASAP due to licensing
 	color: #58595B;
 	line-height: 1.6;
 	margin-bottom: 20px;
@@ -118,7 +126,7 @@ a {
 
 article p a {
 	color: #27AAE1;
-	font-family: 'calibri-italic', 'asap-italic';
+	font-family: 'calibri-italic';
 }
 article p a:hover {
 	color: #00A79D;
@@ -128,7 +136,7 @@ article p a:active {
 }
 
 span {
-	font-family: 'calibri', 'asap', sans-serif;
+	font-family: 'calibri', sans-serif;
 	font-size: 12px;
 }
 
@@ -139,7 +147,7 @@ article ul {
     padding-left: 35px;
     margin-bottom: 20px;
 
-    font-family: 'calibri', 'asap', sans-serif;
+    font-family: 'calibri', sans-serif;
     color: #58595B;
 }
 
@@ -148,7 +156,7 @@ article ol {
     padding-left: 35px;
     margin-bottom: 20px;
 
-    font-family: 'calibri', 'asap', sans-serif;
+    font-family: 'calibri', sans-serif;
     color: #58595B;
 }
 
