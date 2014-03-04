@@ -142,7 +142,7 @@ body {
 			font-family: 'calibri';
 			text-transform: capitalize;
 		}
-			.subnav nav ul li a.selected {
+			.subnav nav ul li.current-menu-item a {
 				color: #fff;
 			}
 				.subnav nav ul li a:hover {
@@ -380,8 +380,13 @@ input[type=button]#toTop:hover {
 ----------- FORM ----------
 ==========================*/
 
+.screen-reader-text{
+	display: none;
+}
+
 form {
-	color: green;
+	color: #fff;
+	font-family: 'calibri';
 }
 
 input {
@@ -389,17 +394,20 @@ input {
 	color: #fff;
 }
 
-input[type=search] {
-	width: 160px;
+input[type=text] {
+	width: 155px;
 	height: 30px;
 	background: #263035;
 	border: none;
 	border-bottom: 1px solid #364449;
+	padding-left: 5px;
 
 	box-shadow: inset 0 0 10px rgba(0,0,0,.2);
 	-moz-box-shadow: inset 0 0 10px rgba(0,0,0,.2);
 	-webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.2);
 }
+
+
 
 input[type=submit] {
 	width: 50px;
