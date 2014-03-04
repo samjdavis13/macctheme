@@ -21,7 +21,7 @@
 
 					<?php else: ?>	
 						<p class='social-icons'>
-							<a href="#">circlefacebook</a> 	<!-- FACEBOOK -->
+							<a href="https://www.facebook.com/pages/Mount-Annan-Christian-College/89294472495" target="_new">circlefacebook</a> 	<!-- FACEBOOK -->
 							<a href="#">circletwitter</a>	<!-- TWITTER -->
 							<a href='#'>circleemail</a>		<!-- EMAIL -->
 						</p>
