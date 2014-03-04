@@ -9,8 +9,12 @@ jQuery(document).ready(function($) {
 
 		if (windowpos >= feature.outerHeight() + nav.outerHeight() ) {
 			topButton.addClass('appear');
+			$('nav ul').addClass('right-align');
+			$('#navlogo').addClass('appear');
 		} else {
 			topButton.removeClass('appear');
+			$('nav ul').removeClass('right-align');
+			$('#navlogo').removeClass('appear');
 		}
 	});
 

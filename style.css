@@ -30,8 +30,16 @@ body {
 
 #navlogo {
 	position: fixed;
-	top: 0;
+	top: -20px;
 	z-index: 11;
+
+	opacity: 0;
+	transition: all .3s;
+}
+
+#navlogo.appear {
+	opacity: 1;
+	top: 0;
 }
 
 #navlogo img {
@@ -54,7 +62,15 @@ body {
 
 	nav ul {
 		list-style: none;
+		text-align: center;
+	}
+
+	nav ul.right-align {
 		text-align: right;
+	}
+
+	nav ul.right-align li > ul {
+		text-align: center;
 	}
 
 		nav ul li {
@@ -109,23 +125,27 @@ body {
 				border-top: 6px solid #7B5BA2;
 			}
 
-div.subnav {
+
+
+.subnav {
 	background: #58595B;
+	width: 100%;
+	z-index: 5;
 }
 
-	div.subnav ul {
+	.subnav nav ul {
 		text-align: center;
 	}
-		div.subnav ul li a {
+		.subnav nav ul li a {
 			color: #CCCCCC;
 			padding: 10px;
 			font-family: 'calibri';
 			text-transform: capitalize;
 		}
-			div.subnav ul li a.selected {
+			.subnav nav ul li a.selected {
 				color: #fff;
 			}
-				div.subnav ul li a:hover {
+				.subnav nav ul li a:hover {
 					border: none;
 				}
 
@@ -237,6 +257,26 @@ article img {
 	margin-right: 10px;
 }
 
+/* LISTS */
+
+article ul {
+	list-style: disc;
+	padding-left: 35px;
+	margin-bottom: 20px;
+
+	font-family: 'calibri', sans-serif;
+	color: #FFF;
+}
+
+article ol {
+	list-style: decimal;
+	padding-left: 35px;
+	margin-bottom: 20px;
+
+	font-family: 'calibri', sans-serif;
+	color: #FFF;
+}
+
 /* TABLES */
 
 table {
@@ -285,7 +325,7 @@ input[type=button]#toTop {
 	opacity: 0;
 
 	position: fixed;
-	bottom: 0px;
+	bottom: -40px;
 	right: 10px;
 
 	color: #000;
