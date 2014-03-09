@@ -43,15 +43,24 @@
 		<nav class="container_12">
 			<ul>
 				<?php 	
+					// If the page is a category, display all posts in category, else display appropriate subnav
 
-					$menuname = wp_title('', false) . '-sub-menu';
-					$args = array (
-						menu => $menuname,
-					);
+					$category = get_category( get_query_var( 'cat' ) );
+				    $cat_id = $category->cat_ID;
 
-					if ( wp_get_nav_menu_object($menuname) ) { // Display appropriate sub-menu if not on home-page
-						wp_nav_menu( $args );
-					};
+					if (is_category() ) { 
+						echo do_shortcode("[catlist id=".$cat_id."]");
+					}else {
+
+						$menuname = wp_title('', false) . '-sub-menu';
+						$args = array (
+							menu => $menuname,
+						);
+
+						if ( wp_get_nav_menu_object($menuname) ) { // Display appropriate sub-menu if not on home-page
+							wp_nav_menu( $args );
+						};
+					}
 					
 				?>
 
