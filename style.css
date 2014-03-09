@@ -273,6 +273,8 @@ td a:active {
 /* FORMS */
 
 .article form {
+	width: 380px;
+	margin: 0;
 	color: #58595B;
 	font-family: 'calibri';
 }
@@ -313,13 +315,8 @@ td a:active {
 
 .article div#ninja_forms_field_2_div_wrap,
 .article div#ninja_forms_field_1_div_wrap {
-	width: 380px; /* GRID_5 */
 	margin: 0;
 	padding: 0;
-}
-
-#ninja_forms_field_3 {
-	width: 380px;
 }
 
 
