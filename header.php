@@ -46,13 +46,14 @@
 		<nav class="container_12">
 			<ul>
 				<?php 	
-					// If the page is a category, display all posts in category, else display appropriate subnav
-
+					// If the page/post has a category, display all posts in category, else display appropriate subnav
 					$category = get_category( get_query_var( 'cat' ) );
-				    $cat_id = $category->cat_ID;
+				    $cat_id = wp_get_post_categories( get_the_id() );
+				    
+					//echo('category is: ' . $cat_id[0] );
 
-					if (is_category() ) { 
-						echo do_shortcode("[catlist id=".$cat_id."]");
+					if ( in_category($cat_id[0]) ) { 
+						echo do_shortcode("[catlist id=" . $cat_id[0] . "]");
 					}else {
 
 						$menuname = wp_title('', false) . '-sub-menu';
