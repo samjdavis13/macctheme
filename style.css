@@ -80,7 +80,7 @@ body {
 
 			nav ul li a {
 				display: inline-block;
-				padding: 42px 20px;
+				padding: 42.5px 20px;
 				color: #999999;
 				text-decoration: none;
 				font-family: 'heroregular';
@@ -94,7 +94,7 @@ body {
 			/* different color hover states */
 			/* FALLBACK */
 			nav ul li a:hover {
-				padding: 36px 20px;
+				padding: 36.5px 20px;
 				color: #27AAE1;
 				border-top: 6px solid #27AAE1;
 			}
