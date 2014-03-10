@@ -104,6 +104,12 @@ h3 {
 h4 {
 	font-size: 20px;
 }
+h6 {
+    position: relative; 
+    top: -30px; 
+    font-size: 16px; 
+    text-align: center;
+}
 
 p {
 	font-family: 'calibri', 'asap', sans-serif;
