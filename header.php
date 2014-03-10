@@ -75,7 +75,7 @@
 				<?php if ( $the_query->have_posts() & is_page('home') ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 					<li><img src="<?php the_field('image'); ?>"></li>
 				<?php endwhile; else: ?>
-					<li><img src="<?php bloginfo('template_directory'); ?>/img/logohr.png"></li>
+					<a href='<?php bloginfo(url); ?>' title='Home'><li><img src="<?php bloginfo('template_directory'); ?>/img/logohr.png"></li></a>
 				<?php endif; ?>
 
 		    </ul>
