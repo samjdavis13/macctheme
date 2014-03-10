@@ -4,6 +4,10 @@ jQuery(document).ready(function($) {
 	var feature = $('.feature');
 	var topButton = $('#toTop');
 
+	if ( $(location).attr('href') == 'http://macc.nsw.edu.au/welcome/' ) {
+		$('#home-link').addClass('current-menu-item');
+	};
+
 	$(window).scroll(function() {
 		var  windowpos = $(window).scrollTop();
 
@@ -11,10 +15,13 @@ jQuery(document).ready(function($) {
 			topButton.addClass('appear');
 			$('nav ul').addClass('right-align');
 			$('#navlogo').addClass('appear');
+			$('#home-link').addClass('hide');
+
 		} else {
 			topButton.removeClass('appear');
 			$('nav ul').removeClass('right-align');
 			$('#navlogo').removeClass('appear');
+			$('#home-link').removeClass('hide');
 		}
 	});
 

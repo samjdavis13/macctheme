@@ -22,9 +22,12 @@
 					<a href='<?php bloginfo('url'); ?>'><img src="<?php bloginfo('template_directory'); ?>/img/logo-reverse.png"></a>
 				</div>
 				<ul>
+					<li id='home-link'><a href='<?php bloginfo(url); ?>'>Home</a></li>
 					<?php 	
 						$args = array (
-							menu => 'main-menu'
+							menu => 'main-menu',
+							container => '',
+							items_wrap => '%3$s'
 						);
 						wp_nav_menu( $args );
 					?>

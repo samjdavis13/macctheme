@@ -440,6 +440,12 @@ footer input[type=submit] {
 	color: #fff;
 }
 
+#home-link {
+	margin: 0;
+	padding: 0;
+}
+
 .hide {
 	display: none;
 }
+
