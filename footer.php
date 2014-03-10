@@ -21,9 +21,9 @@
 
 					<?php else: ?>	
 						<p class='social-icons'>
-							<a href="https://www.facebook.com/pages/Mount-Annan-Christian-College/89294472495" target="_new">circlefacebook</a> 	<!-- FACEBOOK -->
-							<a href="#">circletwitter</a>	<!-- TWITTER -->
-							<a href='#'>circleemail</a>		<!-- EMAIL -->
+							<a href="https://www.facebook.com/pages/Mount-Annan-Christian-College/89294472495" target="_new">&#xe227</a> 	<!-- FACEBOOK -->
+							<a href="https://twitter.com/search?q=%23maccchat&src=typd" target='_new'>&#xe286</a>	<!-- TWITTER -->
+							<a href='mailto:admin@macc.nsw.edu.au'>&#xe224</a>		<!-- EMAIL -->
 						</p>
 					<?php endif; ?>
 				</div>
