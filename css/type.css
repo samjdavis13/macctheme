@@ -118,6 +118,10 @@ a {
 	text-decoration: none;
 }
 
+nav ul li a {
+    font-size: 14px;
+}
+
 article p a {
 	color: #27AAE1;
 	font-family: 'calibri-italic', 'asap-italic';
