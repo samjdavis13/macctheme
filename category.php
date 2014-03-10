@@ -1,7 +1,5 @@
 <?php get_header(); ?>
-
-<?php $counter = 0; ?>
-
+	<?php $counter = 0; ?>
 	<div id='articlewrapper'>
 		<?php if ( have_posts() ) : while ( have_posts() && $counter <= 0 ) : the_post(); ?>
 			<?php $counter++; ?>
