@@ -11,6 +11,10 @@ jQuery(document).ready(function($) {
 	$(window).scroll(function() {
 		var  windowpos = $(window).scrollTop();
 
+		if (windowpos >= 50) {
+			$('#navlogo').addClass('move');
+		} 
+
 		if (windowpos >= feature.outerHeight() + nav.outerHeight() - 100) {
 			topButton.addClass('appear');
 			$('nav ul').addClass('right-align');
@@ -21,6 +25,7 @@ jQuery(document).ready(function($) {
 			topButton.removeClass('appear');
 			$('nav ul').removeClass('right-align');
 			$('#navlogo').removeClass('appear');
+			$('#navlogo').removeClass('move');
 			$('#home-link').removeClass('hide');
 		}
 	});

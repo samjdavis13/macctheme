@@ -30,11 +30,15 @@ body {
 
 #navlogo {
 	position: fixed;
-	top: -20px;
+	top: -100px;
 	z-index: 11;
 
 	opacity: 0;
 	transition: all .3s;
+}
+
+#navlogo.move {
+	top: -20px;
 }
 
 #navlogo.appear {
