@@ -65,4 +65,30 @@ function tgm_cpt_search( $query ) {
     return $query;
 };
 
+// Shortcodes
+function closeDiv_shortcode( $atts, $content = null ) {
+  return '</div>';
+}
+add_shortcode( 'close-div', 'closeDiv_shortcode' );
+
+function openDiv_shortcode( $atts, $content = null ) {
+  return '<div class="fullspan article">';
+}
+add_shortcode( 'open-div', 'openDiv_shortcode' );
+
+function closeArticle_shortcode( $atts, $content = null ) {
+  return '</article>';
+}
+add_shortcode( 'close-article', 'closeArticle_shortcode' );
+
+function openArticle_shortcode( $atts, $content = null ) {
+  return '<article class="container_12">';
+}
+add_shortcode( 'open-article', 'openArticle_shortcode' );
+
+function newArticle_shortcode( $atts, $content = null ) {
+  return '</div></article> <div class="fullspan article"> <article class="container_12">';
+}
+add_shortcode( 'new-article', 'newArticle_shortcode' );
+
 ?>
