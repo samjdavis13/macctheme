@@ -5,7 +5,7 @@
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<div class='fullspan article'>
 				<article class='container_12'>
-					<h1><?php the_title(); ?></h1>
+					<a href='<?php the_permalink(); ?>'><h1 id='post-title'><?php the_title(); ?></h1></a>
 					<?php the_content(); ?>
 				</article>
 			</div>
