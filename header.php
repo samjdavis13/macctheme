@@ -2,9 +2,19 @@
 <htmL>
 	<head>
 		<title>
-			
-			<?php wp_title(''); ?>
-
+			<?php 
+			if (is_category() ){
+				// Remove archive from title. ie ( About Archive - Site Name -> About - Site Name )
+				$pagetitle = wp_title('',FALSE);
+				$pagetitle = substr($pagetitle, 0, -41);
+				echo $pagetitle;
+				echo " - ";
+				echo bloginfo(title);
+			}	
+			else {
+				wp_title('');
+			}
+		?>
 		</title>
 		<?php wp_head(); ?>
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
