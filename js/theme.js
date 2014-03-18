@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
 			$('#navlogo').addClass('move');
 		} 
 
-		if (windowpos >= feature.outerHeight() + nav.outerHeight() - 100) {
+		if (windowpos >= feature.outerHeight() + nav.outerHeight() - 220) {
 			topButton.addClass('appear');
 			$('nav ul').addClass('right-align');
 			$('#navlogo').addClass('appear');
