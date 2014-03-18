@@ -133,6 +133,8 @@ body {
 
 
 .subnav {
+	position: fixed;
+	top: 100px;
 	background: #58595B;
 	width: 100%;
 	z-index: 5;
