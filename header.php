@@ -3,10 +3,7 @@
 	<head>
 		<title>
 			
-			<?php
-				wp_title( '-', true, 'right' );
-				bloginfo('name');
-			?>
+			<?php wp_title(''); ?>
 
 		</title>
 		<?php wp_head(); ?>
