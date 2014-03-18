@@ -149,11 +149,36 @@ body {
 			font-family: 'calibri';
 			text-transform: capitalize;
 		}
-			.subnav nav ul li.current-menu-item a {
+			.subnav nav ul li.current a {
 				color: #fff;
 			}
 				.subnav nav ul li a:hover {
 					border: none;
+				}
+				/* different color hover states */
+				/* FALLBACK */
+				nav ul li a:hover {
+					color: #27AAE1;
+				}
+
+				/* WORKING CODE */
+				nav ul li:nth-child(6n+1) a:hover {
+					color: #27AAE1;
+				}
+				nav ul li:nth-child(6n+2) a:hover {
+					color: #00A79D;
+				}
+				nav ul li:nth-child(6n+3) a:hover {
+					color: #8EC640;
+				}
+				nav ul li:nth-child(6n+4) a:hover {
+					color: #FAA51B;
+				}
+				nav ul li:nth-child(6n+5) a:hover {
+					color: #E93F70;
+				}
+				nav ul li:nth-child(6n+6) a:hover {
+					color: #7B5BA2;
 				}
 
 /*=========================
