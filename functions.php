@@ -92,4 +92,9 @@ function newArticle_shortcode( $atts, $content = null ) {
 }
 add_shortcode( 'new-article', 'newArticle_shortcode' );
 
+function hideTitle_shortcode( $atts, $content = null ) {
+	return '<style> #post-title { display: none; } </style>';
+}
+add_shortcode ( 'hide-title', 'hideTitle_shortcode' );
+
 ?>
