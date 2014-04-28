@@ -51,7 +51,7 @@
 
 	<div class='fullspan subnav'>
 		<nav class="container_12">
-			<ul>
+			<ul id='subnav'>
 				<?php 	
 					// If the page/post has a category, display all posts in category, else display appropriate subnav
 					$category = get_category( get_query_var( 'cat' ) );
