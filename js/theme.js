@@ -3,9 +3,15 @@ jQuery(document).ready(function($) {
 	var nav = $('.nav')
 	var feature = $('.feature');
 	var topButton = $('#toTop');
+	var body = $('body');
 
 	if ( $(location).attr('href') == 'http://macc.nsw.edu.au/welcome/' || $(location).attr('href') == 'http://macc.nsw.edu.au/welcome/design-an-ad/' ) {
 		$('#home-link').addClass('current-menu-item');
+	};
+
+	if  ( $('#subnav li').length ) {
+		// If subnav exists add class to body.
+		body.addClass('wsubnav');
 	};
 
 	$(window).scroll(function() {
