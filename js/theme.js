@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
 	var feature = $('.feature');
 	var topButton = $('#toTop');
 
-	if ( $(location).attr('href') == 'http://macc.nsw.edu.au/welcome/' ) {
+	if ( $(location).attr('href') == 'http://macc.nsw.edu.au/welcome/' || $(location).attr('href') == 'http://macc.nsw.edu.au/welcome/design-an-ad/' ) {
 		$('#home-link').addClass('current-menu-item');
 	};
 
