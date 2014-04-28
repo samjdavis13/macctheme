@@ -9,7 +9,7 @@ function theme_styles() {
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/style.css' );
 
 	wp_register_style( 'homestyle', get_template_directory_uri() . '/css/style-home.css' );
-	if ( is_page('home') ) {
+	if (is_page_template('front-page.php') ) {
 		wp_enqueue_style('homestyle');
 	}
 }
@@ -17,7 +17,8 @@ function theme_styles() {
 // Load the Theme JS
 function theme_js() {
 	wp_register_script( 'unslider', get_template_directory_uri() . '/js/unslider.min.js', array('jquery'), '', true );
-	if ( is_page('home') ) {
+	//if ( is_page('home') || is_page('design-an-ad') ) {
+	if (is_page_template('front-page.php') ) {
 		wp_enqueue_script('unslider');
 	}
 	wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/js/theme.js', array('jquery'), '', true );
