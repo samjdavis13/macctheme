@@ -83,7 +83,7 @@
 		<div class='container_12 slider'>
 			<ul>
 
-				<?php if ( $the_query->have_posts() & is_page('home') ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+				<?php if ( $the_query->have_posts() & is_page_template('front-page.php') ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 					<li><a href='<?php the_field('featured-link'); ?>#'><img src="<?php the_field('image'); ?>"></a></li>
 				<?php endwhile; else: ?>
 					<a href='<?php bloginfo(url); ?>' title='Home'><li><img src="<?php bloginfo('template_directory'); ?>/img/logohr.png"></li></a>
