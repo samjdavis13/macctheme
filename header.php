@@ -16,6 +16,7 @@
 			}
 		?>
 		</title>
+		<?php $options = get_option('theme_options'); ?>
 		<?php wp_head(); ?>
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 		<link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/favicon.png" />
@@ -82,8 +83,7 @@
 	<div class='fullspan feature'>
 		<div class='container_12 slider'>
 			<ul>
-
-				<?php if ( $the_query->have_posts() & is_page_template('front-page.php') ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+				<?php if ( is_page_template('front-page.php') || get_setting('always_show_slider') ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 					<li><a href='<?php the_field('featured-link'); ?>#'><img src="<?php the_field('image'); ?>"></a></li>
 				<?php endwhile; else: ?>
 					<a href='<?php bloginfo(url); ?>' title='Home'><li><img src="<?php bloginfo('template_directory'); ?>/img/logohr.png"></li></a>
