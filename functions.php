@@ -21,7 +21,7 @@ function theme_js() {
 	if (is_page_template('front-page.php') || get_setting('always_show_slider') ) {
 		wp_enqueue_script('unslider');
 	}
-	wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/js/theme.js', array('jquery'), '', true );
+	wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/js/theme.js?ver=2.0', array('jquery'), '', true );
 
 }
 
