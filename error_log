@@ -1,2 +1,0 @@
-[18-May-2014 20:18:25] PHP Fatal error:  Call to undefined function  get_header() in /home1/maccadm1/public_html/welcome/wp-content/themes/macctheme/index.php on line 1
-[18-May-2014 20:19:53] PHP Fatal error:  Call to undefined function  get_header() in /home1/maccadm1/public_html/welcome/wp-content/themes/macctheme/index.php on line 1
