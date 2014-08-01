@@ -5,15 +5,81 @@
 	<head>
 		<title>MACC Theme v2.0</title>
 
+		<!-- MAKE SURE WE'RE RESPONSIVE READY -->
+		<meta name="viewport" content="width=device-width;minimum-scale=0.5,maximum-scale=1.0; user-scalable=1;" />
+
 		<!-- STYLESHEETS -->
 		<link rel="stylesheet" type="text/css" href="css/simplegrid.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 
 	<body>
-		
+		<nav class="fullspan" id="large-nav">
+			<div class="grid">
+				<ul class="col-1-1">
+					<li class="current-menu-item"><a href="#">home</a></li>
+					<li><a href="#">about</a></li>
+					<li><a href="#">news</a></li>
+					<li><a href="#">education</a></li>
+					<li><a href="#">enrolment</a></li>
+					<li><a href="#">community</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div id='mobile-padder'></div>
+		<nav class="fullspan hide" id="mobile-nav">
+			<div class="grid">
+				<ul class="col-1-1">
+					<li id='menu-button-container'><a href='javascript:void(0)' id="menu-button">SHOW/HIDE MENU</a></li>
+				</ul>
+				<ul class="col-1-1" id='mobile-menu-items'>
+					<li class="current-menu-item"><a href="#">home</a></li>
+					<li><a href="#">about</a></li>
+					<li><a href="#">news</a></li>
+					<li><a href="#">education</a></li>
+					<li><a href="#">enrolment</a></li>
+					<li><a href="#">community</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="grid grid-pad">
+			<div class="col-1-1">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><br>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><br>
+				</p>
+			</div>
+		</div>
 
 		<!-- JAVASCRIPT LINKING -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript" src='js/theme.js'></script>
 	</body>
 

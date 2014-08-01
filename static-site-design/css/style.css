@@ -1,0 +1,107 @@
+/*=========================
+---------- GENERAL --------
+==========================*/
+body, html {
+  overflow-x: hidden; }
+
+.fullspan {
+  width: 100%; }
+
+.hide {
+  display: none; }
+
+.unselectable {
+  /*
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  */ }
+
+/*=========================
+-------- NAVIGATION -------
+==========================*/
+#mobile-menu-items {
+  display: none; }
+
+nav.fullspan {
+  background: #333d47; }
+
+nav ul {
+  text-align: center;
+  /* Primary Coloured Menu Items */ }
+  nav ul li {
+    display: inline-block;
+    padding: 25px 0; }
+    nav ul li a {
+      color: #999999;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 38px 25px;
+      font-family: hero;
+      font-size: 15px; }
+  nav ul li.current-menu-item a {
+    color: white; }
+  nav ul li:nth-child(6n+1) a:hover {
+    color: #00a0df;
+    border-top: 8px solid #00a0df; }
+  nav ul li:nth-child(6n+2) a:hover {
+    color: #00a19a;
+    border-top: 8px solid #00a19a; }
+  nav ul li:nth-child(6n+3) a:hover {
+    color: #82bc00;
+    border-top: 8px solid #82bc00; }
+  nav ul li:nth-child(6n+4) a:hover {
+    color: #ffa300;
+    border-top: 8px solid #ffa300; }
+  nav ul li:nth-child(6n+5) a:hover {
+    color: #e74260;
+    border-top: 8px solid #e74260; }
+  nav ul li:nth-child(6n+6) a:hover {
+    color: #7f56c5;
+    border-top: 8px solid #7f56c5; }
+
+@media only screen and (max-width: 767px) {
+  #mobile-padder {
+    height: 90px;
+    width: 100%; }
+
+  nav {
+    position: fixed;
+    top: 0; }
+    nav ul {
+      /* Primary Coloured Menu Items */ }
+      nav ul li {
+        border-bottom: 1px solid #3e4a56;
+        padding: 10px 0;
+        width: 100%; }
+        nav ul li a {
+          padding: 0 20px;
+          font-size: 20px; }
+      nav ul li#menu-button-container {
+        border-bottom: 0px solid white;
+        background: #3e4a56; }
+        nav ul li#menu-button-container a {
+          padding: 0 50px; }
+        nav ul li#menu-button-container a:hover {
+          color: white; }
+      nav ul li:nth-child(6n+1) a:hover {
+        color: #00a0df;
+        border-top: none; }
+      nav ul li:nth-child(6n+2) a:hover {
+        color: #00a19a;
+        border-top: none; }
+      nav ul li:nth-child(6n+3) a:hover {
+        color: #82bc00;
+        border-top: none; }
+      nav ul li:nth-child(6n+4) a:hover {
+        color: #ffa300;
+        border-top: none; }
+      nav ul li:nth-child(6n+5) a:hover {
+        color: #e74260;
+        border-top: none; }
+      nav ul li:nth-child(6n+6) a:hover {
+        color: #7f56c5;
+        border-top: none; } }
