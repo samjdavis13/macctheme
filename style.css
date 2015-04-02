@@ -518,3 +518,50 @@ footer input[type=submit] {
 	display: none;
 }
 
+#mobile-logo {
+	position: absolute;
+	top: -500px;
+}
+
+@media screen and (max-width: 960px) {
+	/* Padding behind nav */
+	body {
+		margin-top: 0;
+	}
+	.subnav {
+		margin-top: 0;
+		position: static;
+	}
+
+	body.wsubnav {
+		margin-top: 0;
+	}	
+
+	.fullspan.nav.fixedTop {
+		position: relative;
+	}
+	img {
+		position: relative;
+		max-width: 100%;
+		height: auto;
+	}
+	input[type=button]#toTop {
+		display: none;
+	}
+	.article form {
+		position: relative;
+		width: 100%;
+	}
+	#mobile-logo {
+		position: relative;
+		z-index: 1000;
+		padding-top: 20px;
+		top: 0;
+		width: 100%;
+		background-color: #2E3B42;
+	}
+	#mobile-logo-inner {
+		width: 50%;
+		margin: 0 auto;
+	}
+}

@@ -25,6 +25,11 @@
 
 	</head>
 	<body>
+		<div class="fullspan" id="mobile-logo">
+			<div class="container_12" id="mobile-logo-inner">
+				<a href='<?php bloginfo('url'); ?>'><img src="<?php bloginfo('template_directory'); ?>/img/logo-reverse.png"></a>
+			</div>
+		</div>
 		<div class='fullspan nav fixedTop'>
 			<nav class="container_12">
 				<div id='navlogo'>
