@@ -21,6 +21,8 @@
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 		<link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/favicon.png" />
 
+		<meta name=viewport content="width=device-width, initial-scale=1">
+
 	</head>
 	<body>
 		<div class='fullspan nav fixedTop'>
@@ -81,15 +83,16 @@
 	</div>
 
 	<div class='fullspan feature'>
-		<div class='container_12 slider'>
-			<ul>
-				<?php if ( is_page_template('front-page.php') || get_setting('always_show_slider') ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-					<li><a href='<?php the_field('featured-link'); ?>#'><img src="<?php the_field('image'); ?>"></a></li>
-				<?php endwhile; else: ?>
-					<a href='<?php bloginfo(url); ?>' title='Home'><li><img src="<?php bloginfo('template_directory'); ?>/img/logohr.png"></li></a>
-				<?php endif; ?>
-
-		    </ul>
+		<div class='container_12'>
+			<div class="slider">
+				<ul>
+					<?php if ( is_page_template('front-page.php') || get_setting('always_show_slider') ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+						<li class="slider-item"><a href='<?php the_field('featured-link'); ?>#'><img src="<?php the_field('image'); ?>"></a></li>
+					<?php endwhile; else: ?>
+						<a href='<?php bloginfo(url); ?>' title='Home'><li><img src="<?php bloginfo('template_directory'); ?>/img/logohr.png"></li></a>
+					<?php endif; ?>
+			    </ul>
+		    </div>
 		</div>
 	</div>
 

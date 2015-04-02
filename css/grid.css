@@ -26,6 +26,17 @@ body {
   width: 960px;
 }
 
+/* SMALL SCREEN HACKS */
+/* NEEDS REPLACING ASAP */
+@media screen and (max-width: 960px) {
+  body {
+    min-width: 100%;
+  }
+  .container_12 { 
+    width: 90%;
+  }
+}
+
 /* `Grid >> Global
 ----------------------------------------------------------------------------------------------------*/
 

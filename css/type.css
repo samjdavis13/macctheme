@@ -132,6 +132,22 @@ nav ul li a {
     font-size: 1em;
 }
 
+/* SMALL SCREEN HACKS */
+/* NEEDS REPLACING ASAP */
+@media screen and (max-width: 960px) {
+  nav ul li a {
+    font-size: .75em;
+  }
+  #home-link{ 
+    display: none;
+  }
+}
+@media screen and (max-width: 360px) {
+  nav ul li a {
+    font-size: .5em;
+  }
+}
+
 article ul li a {
     color: #27AAE1;
 }

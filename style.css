@@ -1,5 +1,5 @@
 /*
-Theme Name: MACC Theme
+Theme Name: MACC
 Theme URI: http://github.com/samjdavis13/macc-site-theme/wp-content/themes/macctheme/
 Description: A custom WordPress theme created for the rebranding of the corporate image for Mount Annan Christian College
 Author: Samuel Davis
@@ -65,6 +65,7 @@ body.wsubnav {
 	-webkit-box-shadow: 0 1px 10px rgba(0,0,0,.3);
 }
 
+
 .fullspan.nav.fixedTop {
 	position: fixed;
 	top: 0;
@@ -110,6 +111,17 @@ body.wsubnav {
 				border-top: 6px solid #27AAE1;
 			}
 
+			/* SMALL SCREEN HACKS */
+			/* NEEDS REPLACING ASAP */
+			@media screen and (max-width: 960px) {
+			  	nav ul li a {
+					padding: 42.5px 5px;
+				}
+				nav ul li a:hover {
+					padding: 36.5px 5px;		
+				}
+			}
+
 			/* WORKING CODE */
 			nav ul li:nth-child(6n+1) a:hover {
 				color: #27AAE1;
@@ -136,7 +148,16 @@ body.wsubnav {
 				border-top: 6px solid #7B5BA2;
 			}
 
-
+/* SMALL SCREEN HACKS */
+/* NEEDS REPLACING ASAP */
+@media screen and (max-width: 960px) {
+  #navlogo {
+	display: none;
+  }
+  nav ul.right-align {
+		text-align: center;
+	}
+}
 
 .subnav {
 	position: fixed;
@@ -213,8 +234,16 @@ body.wsubnav {
 
         	.slider ul li img {
         		width: 960px;
-        		height: 350px;
+        		/*height: 350px;*/
         	}
+
+/* SMALL SCREEN HACKS */
+/* NEEDS REPLACING ASAP */
+@media screen and (max-width: 960px) {
+	.slider {
+		display: none;
+	}
+}
 
 .dots {
   position: absolute;
