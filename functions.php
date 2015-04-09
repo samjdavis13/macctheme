@@ -19,8 +19,9 @@ function theme_js() {
 	wp_register_script( 'unslider', get_template_directory_uri() . '/js/unslider.min.js', array('jquery'), '', true );
 	//if ( is_page('home') || is_page('design-an-ad') ) {
 	if (is_page_template('front-page.php') || get_setting('always_show_slider') ) {
-		wp_enqueue_script('unslider');
+		
 	}
+	wp_enqueue_script('unslider');
 	wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/js/theme.js?ver=2.0', array('jquery'), '', true );
 
 }

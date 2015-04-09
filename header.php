@@ -91,13 +91,16 @@
 		<div class='container_12'>
 			<div class="slider">
 				<ul>
-					// If on the home page, or the 'always_show_slider' setting is set to true
-					// SHOW THE FEATURE SLIDER
-					<?php if ( is_page_template('front-page.php') || get_setting('always_show_slider') ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+					
+					<?php
+					/* Use hero-image if exists, else default to slider */
+					$heroUrl = get_field('hero-image');
+					if (strlen($heroUrl) > 0): ?>
+						<li><img src="<?php the_field('hero-image') ?>"></li>
+					<?php else: while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						<li class="slider-item"><a href='<?php the_field('featured-link'); ?>#'><img src="<?php the_field('image'); ?>"></a></li>
-					<?php endwhile; else: ?>
-						<a href='<?php bloginfo(url); ?>' title='Home'><li><img src="<?php bloginfo('template_directory'); ?>/img/logohr.png"></li></a>
-					<?php endif; ?>
+					<?php endwhile; endif ?>
+
 			    </ul>
 		    </div>
 		</div>
