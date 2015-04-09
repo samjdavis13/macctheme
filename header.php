@@ -32,12 +32,12 @@
 		</div>
 		<div class='fullspan nav fixedTop'>
 			<nav class="container_12">
-				<div id='navlogo'>
+				<div id='navlogo' class="appear">
 					<h1 class='hide'><?php bloginfo('name'); ?></h1> <!-- FOR SEO PURPOSES | GETS HIDDEN -->
 					<a href='<?php bloginfo('url'); ?>'><img src="<?php bloginfo('template_directory'); ?>/img/logo-reverse.png"></a>
 				</div>
-				<ul>
-					<li id='home-link'><a href='<?php bloginfo(url); ?>'>Home</a></li>
+				<ul class="right-align">
+					<li id='home-link' class="hide"><a href='<?php bloginfo(url); ?>'>Home</a></li>
 					<?php 	
 						$args = array (
 							menu => 'main-menu',
@@ -91,6 +91,8 @@
 		<div class='container_12'>
 			<div class="slider">
 				<ul>
+					// If on the home page, or the 'always_show_slider' setting is set to true
+					// SHOW THE FEATURE SLIDER
 					<?php if ( is_page_template('front-page.php') || get_setting('always_show_slider') ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						<li class="slider-item"><a href='<?php the_field('featured-link'); ?>#'><img src="<?php the_field('image'); ?>"></a></li>
 					<?php endwhile; else: ?>

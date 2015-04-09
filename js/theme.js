@@ -1,5 +1,11 @@
 jQuery(document).ready(function($) {
 
+	// Setup NAV to always display logo and right align menu
+	// Change these in CSS to stop animation
+	$('nav ul').addClass('right-align');
+	$('#navlogo').addClass('appear');
+	$('#home-link').addClass('hide');
+
 	var nav = $('.nav')
 	var feature = $('.feature');
 	var topButton = $('#toTop');
@@ -23,16 +29,16 @@ jQuery(document).ready(function($) {
 
 		if (windowpos >= feature.outerHeight() + nav.outerHeight() - 220) {
 			topButton.addClass('appear');
-			$('nav ul').addClass('right-align');
-			$('#navlogo').addClass('appear');
-			$('#home-link').addClass('hide');
+			//$('nav ul').addClass('right-align');
+			//$('#navlogo').addClass('appear');
+			//$('#home-link').addClass('hide');
 
 		} else {
 			topButton.removeClass('appear');
-			$('nav ul').removeClass('right-align');
-			$('#navlogo').removeClass('appear');
-			$('#navlogo').removeClass('move');
-			$('#home-link').removeClass('hide');
+			//$('nav ul').removeClass('right-align');
+			//$('#navlogo').removeClass('appear');
+			//$('#navlogo').removeClass('move');
+			//$('#home-link').removeClass('hide');
 		}
 	});
 
