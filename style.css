@@ -271,6 +271,16 @@ body.wsubnav {
 		  opacity: 1;
 		}
 
+
+/* SMALL SCREEN HACKS */
+/* NEEDS REPLACING ASAP */
+@media screen and (max-width: 960px) {
+	div.hero-img {
+		width: 100%;
+	}
+}
+
+
 /*=========================
 -------- ARTICLES ---------
 ==========================*/
