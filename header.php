@@ -89,21 +89,20 @@
 
 	<div class='fullspan feature'>
 		<div class='container_12 hero-img'>
-
-					<?php
-					/* Use hero-image if exists, else default to slider */
-					$heroUrl = get_field('hero-image');
-					if (strlen($heroUrl) > 0): ?>
-						<img src="<?php the_field('hero-image') ?>" width="100%" class='hero-img'>
-					<?php else: ?>
-						<div class="slider">
-							<ul>
-					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-								<li class="slider-item"><a href='<?php the_field('featured-link'); ?>#'><img src="<?php the_field('image'); ?>"></a></li>
-					<?php endwhile ?>
-							</ul>
-						</div> 
-					<?php endif ?>
+		<?php
+		/* Use hero-image if exists, else default to slider */
+		$heroUrl = get_field('hero-image');
+		if (strlen($heroUrl) > 0): ?>
+			<img src="<?php the_field('hero-image') ?>" width="100%" class='hero-img'>
+		<?php else: ?>
+			<div class="slider">
+				<ul>
+		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+					<li class="slider-item"><a href='<?php the_field('featured-link'); ?>#'><img src="<?php the_field('image'); ?>"></a></li>
+		<?php endwhile ?>
+				</ul>
+			</div> 
+		<?php endif ?>
 		</div>
 	</div>
 
