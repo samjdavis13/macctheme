@@ -234,14 +234,14 @@ body.wsubnav {
 
         	.slider ul li img {
         		width: 960px;
-        		/*height: 350px;*/
+        		height: 350px;
         	}
 
 /* SMALL SCREEN HACKS */
 /* NEEDS REPLACING ASAP */
 @media screen and (max-width: 960px) {
 	.slider {
-		/*display: none;*/
+		display: none;
 	}
 }
 
