@@ -2,6 +2,7 @@
 
 // Load the Theme CSS
 function theme_styles() {
+	$_POST['hello'] = "HEY!";
 
 	wp_enqueue_style( 'reset', get_template_directory_uri() . '/css/reset.css' );
 	wp_enqueue_style( 'grid', get_template_directory_uri() . '/css/grid.css' );
@@ -21,13 +22,23 @@ function theme_js() {
 	if (is_page_template('front-page.php') || get_setting('always_show_slider') ) {
 		
 	}
-	wp_enqueue_script('unslider');
+	// wp_enqueue_script('unslider');
 	wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/js/theme.js?ver=2.0', array('jquery'), '', true );
 
 }
 
+// Called from within header.php after
+// evaluating if a slider is used
+function addSliderJS() {
+	wp_enqueue_script('unslider');
+}
+
 add_action( 'wp_enqueue_scripts', 'theme_js' );
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
+
+// This is called after the page is fully loaded 
+// to ensure that $_POST['isSlider'] is initialised
+// add_action( 'wp_loaded', 'addSliderJS' );
 
 // Enable custom menus
 add_theme_support( 'menus' );
