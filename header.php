@@ -94,7 +94,7 @@
 					/* Use hero-image if exists, else default to slider */
 					$heroUrl = get_field('hero-image');
 					if (strlen($heroUrl) > 0): ?>
-						<img src="<?php the_field('hero-image') ?>" width="960px" class='hero-img'>
+						<img src="<?php the_field('hero-image') ?>" width="100%" class='hero-img'>
 					<?php else: ?>
 						<div class="slider">
 							<ul>

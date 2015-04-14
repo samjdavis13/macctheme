@@ -226,7 +226,7 @@ body.wsubnav {
 }
     .slider li { 
     	list-style: none; 
-    	height: 350px;
+    	height: auto;
     }
         .slider ul li { 
         	float: left; 
@@ -241,7 +241,7 @@ body.wsubnav {
 /* NEEDS REPLACING ASAP */
 @media screen and (max-width: 960px) {
 	.slider {
-		display: none;
+		/*display: none;*/
 	}
 }
 
