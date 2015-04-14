@@ -94,7 +94,7 @@ body.wsubnav {
 				padding: 42.5px 20px;
 				color: #999999;
 				text-decoration: none;
-				font-family: 'heroregular';
+				font-family: 'heroregular', 'hero', 'avenir', 'helvetica', 'arial', sans-serif;
 				text-transform: uppercase;
 			}
 
@@ -176,7 +176,7 @@ body.wsubnav {
 		.subnav nav ul li a {
 			color: #CCCCCC;
 			padding: 10px;
-			font-family: 'calibri';
+			font-family: 'calibri', 'verdana', sans-serif;
 			text-transform: capitalize;
 		}
 			.subnav nav ul li.current a {
@@ -330,13 +330,13 @@ th, td {
 }
 
 th {
-	font-family: 'heroregular';
+	font-family: 'heroregular', 'hero', 'avenir', sans-serif;
 	text-transform: uppercase;
 	font-size: 18px;
 }
 
 td {
-	font-family: 'calibri';
+	font-family: 'calibri', 'verdana', sans-serif;
 }
 
 td a {
@@ -355,7 +355,7 @@ td a:active {
 	width: 380px;
 	margin: 0;
 	color: #58595B;
-	font-family: 'calibri';
+	font-family: 'calibri', 'verdana', sans-serif;
 }
 
 .article label {
@@ -412,7 +412,7 @@ input[type=button]#toTop {
 
 	color: #000;
 	text-transform: uppercase;
-	font-family: 'calibri';
+	font-family: 'calibri', 'verdana', sans-serif;
 	font-size: 13px;
 
 	height: 40px;
@@ -488,7 +488,7 @@ footer .screen-reader-text{
 
 footer form {
 	color: #fff;
-	font-family: 'calibri';
+	font-family: 'calibri', 'verdana', sans-serif;
 }
 
 footer input {
