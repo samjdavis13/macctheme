@@ -87,7 +87,17 @@
 		</nav>
 	</div>
 
+	<?php
+	/* Use hero-image if exists, else default to slider */
+	$heroUrl = get_field('hero-image');
+	if (strlen($heroUrl) > 0): ?>
+	<img src="<?php the_field('hero-image') ?>" class='bg-hero'>
+	<div class="img-darkener hide-mobile"></div>
+	<div class='fullspan'>
+	<?php else: ?>
 	<div class='fullspan feature'>
+	<?php endif ?>
+	
 		<div class='container_12 hero-img'>
 			<div class="slider">
 				<ul>

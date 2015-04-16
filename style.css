@@ -151,7 +151,7 @@ body.wsubnav {
 /* SMALL SCREEN HACKS */
 /* NEEDS REPLACING ASAP */
 @media screen and (max-width: 960px) {
-  #navlogo {
+  #navlogo, .hide-mobile {
 	display: none;
   }
   nav ul.right-align {
@@ -280,6 +280,27 @@ body.wsubnav {
 	}
 }
 
+.bg-hero {
+	position: absolute;
+	top: 50px;
+	z-index: -1;
+	width: 100%;
+	
+	
+	filter: brightness(80%) blur(10px);
+	-o-filter: brightness(80%) blur(10px);
+	-moz-filter: brightness(80%) blur(10px);
+	-webkit-filter: brightness(80%) blur(10px);
+	*/
+}
+
+.img-darkener {
+	position: absolute;
+	width: 100%;
+	height: 350px;
+	background-color: #000; /*#2E3B42*/
+	opacity: .4;
+}
 
 /*=========================
 -------- ARTICLES ---------
