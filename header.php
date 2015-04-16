@@ -21,7 +21,7 @@
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 		<link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/favicon.png" />
 
-		<meta name=viewport content="width=device-width, initial-scale=1">
+		<meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 
 	</head>
 	<body>
