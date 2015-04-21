@@ -14,7 +14,7 @@
 			else {
 				wp_title('');
 			}
-		?>
+			?>
 		</title>
 		<?php $options = get_option('theme_options'); ?>
 		<?php wp_head(); ?>
@@ -88,11 +88,20 @@
 	</div>
 
 	<?php
-	/* Use hero-image if exists, else default to slider */
+	/* If we have a hero img make BG for it */
 	$heroUrl = get_field('hero-image');
-	if (strlen($heroUrl) > 0): ?>
-	<img src="<?php the_field('hero-image') ?>" class='bg-hero'>
-	<div class="img-darkener hide-mobile"></div>
+	if (strlen($heroUrl) > 0):?>
+	<?php if (get_user_browser() == "ie") : ?>
+		<!--
+		-- TRIAL CODE FOR STACKBLUR.JS --
+		<canvas id="bg-hero-canvas" height="450px"></canvas>
+		<div class="img-darkener hide-mobile"></div>
+		-->
+	<?php else: ?>
+		<img src="<?php the_field('hero-image') ?>" class='bg-hero'>
+		<div class="img-darkener hide-mobile"></div>
+	<?php endif ?>
+
 	<div class='fullspan'>
 	<?php else: ?>
 	<div class='fullspan feature'>
@@ -101,11 +110,10 @@
 		<div class='container_12 hero-img'>
 			<div class="slider">
 				<ul>
-				<?php
+				<?php 
 				/* Use hero-image if exists, else default to slider */
-				$heroUrl = get_field('hero-image');
 				if (strlen($heroUrl) > 0): ?>
-					<li><img src="<?php the_field('hero-image') ?>" width="100%" class='hero-img'></li>
+					<li><img src="<?php the_field('hero-image') ?>" width="100%" class='hero-img' id="hero-image"></li>
 				<?php else: addSliderJS(); // Adds JS for Slider ?>
 				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 					<li class="slider-item"><a href='<?php the_field('featured-link'); ?>#'><img src="<?php the_field('image'); ?>"></a></li>
@@ -116,4 +124,3 @@
 
 	
 	</div>
-

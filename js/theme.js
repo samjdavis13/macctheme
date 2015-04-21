@@ -6,19 +6,19 @@ jQuery(document).ready(function($) {
 	$('#navlogo').addClass('appear');
 	$('#home-link').addClass('hide');
 
-	var nav = $('.nav')
+	var nav = $('.nav');
 	var feature = $('.feature');
 	var topButton = $('#toTop');
 	var body = $('body');
 
 	if ( $(location).attr('href') == 'http://macc.nsw.edu.au/welcome/' || $(location).attr('href') == 'http://macc.nsw.edu.au/welcome/design-an-ad/' ) {
 		$('#home-link').addClass('current-menu-item');
-	};
+	}
 
 	if  ( $('#subnav li').length ) {
 		// If subnav exists add class to body.
 		body.addClass('wsubnav');
-	};
+	}
 
 	$(window).scroll(function() {
 		var  windowpos = $(window).scrollTop();
@@ -57,4 +57,18 @@ jQuery(document).ready(function($) {
 		});
 	});
 
+	/*
+	-- TRIAL CODE FOR STACKBLUR.JS --
+	if (document.getElementById("bg-hero-canvas") != null) {
+		var canvas = document.getElementById("bg-hero-canvas");
+		var context = canvas.getContext("2d");
+		var bgHero = document.getElementById("hero-image");
+		windowWidth = $(window).innerWidth();
+		$('#bg-hero-canvas').css('width', windowWidth);   
+		context.drawImage(bgHero, 0, 0, windowWidth/3, 450/3);
+
+		stackBlurCanvasRGBA("bg-hero-canvas",0,0,windowWidth,450,10);
+	}
+	*/
+		
 });

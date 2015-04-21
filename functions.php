@@ -24,6 +24,7 @@ function theme_js() {
 	}
 	// wp_enqueue_script('unslider');
 	wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/js/theme.js?ver=2.0', array('jquery'), '', true );
+	wp_enqueue_script( 'stackblur_js', get_template_directory_uri() . '/js/stackblur.js', array('jquery'), '', true );
 
 }
 
@@ -35,6 +36,7 @@ function addSliderJS() {
 
 add_action( 'wp_enqueue_scripts', 'theme_js' );
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
+
 
 // This is called after the page is fully loaded 
 // to ensure that $_POST['isSlider'] is initialised
@@ -109,4 +111,29 @@ function hideTitle_shortcode( $atts, $content = null ) {
 }
 add_shortcode ( 'hide-title', 'hideTitle_shortcode' );
 
+/*==========================
+-----BROWSER IDENTIFIER-----
+==========================*/
+function get_user_browser()
+{
+    $u_agent = $_SERVER['HTTP_USER_AGENT'];
+    $ub = '';
+    if(preg_match('/MSIE/i',$u_agent)){
+        $ub = "ie";
+    } elseif(preg_match('/Trident/i',$u_agent)) {
+    	$ub = "ie";
+    } elseif(preg_match('/Firefox/i',$u_agent)) {
+        $ub = "firefox";
+    } elseif(preg_match('/Safari/i',$u_agent)) {
+        $ub = "safari";
+    } elseif(preg_match('/Chrome/i',$u_agent)) {
+        $ub = "chrome";
+    } elseif(preg_match('/Flock/i',$u_agent)) {
+        $ub = "flock";
+    } elseif(preg_match('/Opera/i',$u_agent)) {
+        $ub = "opera";
+    }
+
+    return $ub;
+}
 ?>
