@@ -116,7 +116,15 @@
 					<li><img src="<?php the_field('hero-image') ?>" width="100%" class='hero-img' id="hero-image"></li>
 				<?php else: addSliderJS(); // Adds JS for Slider ?>
 				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-					<li class="slider-item"><a href='<?php the_field('featured-link'); ?>#'><img src="<?php the_field('image'); ?>"></a></li>
+					
+					<li class="slider-item">
+					<?php if (get_field('new_tab')): ?>
+						<a href='<?php the_field('featured-link'); ?>#' target="_blank" ><img src="<?php the_field('image'); ?>"></a>
+					<?php else: ?>
+						<a href='<?php the_field('featured-link'); ?>#'><img src="<?php the_field('image'); ?>"></a>
+					<?php endif ?>
+					</li>
+					
 				<?php endwhile; endif ?>
 				</ul>
 			</div> 
